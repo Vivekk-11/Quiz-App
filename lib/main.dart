@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:third_app/gradient_container.dart';
+import 'package:third_app/start_screen.dart';
 
 void main() {
-  runApp(const MaterialApp(
+  runApp(MaterialApp(
     home: Scaffold(
-      body: GradientContainer(
-        [
-          Colors.deepPurple,
-          Colors.indigo,
-        ],
-        Alignment.topLeft,
-        Alignment.bottomRight,
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.deepPurple, Colors.indigo],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: const StartScreen(),
       ),
     ),
   ));

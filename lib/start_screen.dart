@@ -1,24 +1,12 @@
 import 'package:flutter/material.dart';
 
-class GradientContainer extends StatelessWidget {
-  const GradientContainer(this.colors, this.begin, this.end, {super.key});
-
-  final List<Color> colors;
-  final Alignment begin;
-  final Alignment end;
+class StartScreen extends StatelessWidget {
+  const StartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: colors,
-          begin: begin,
-          end: end,
-        ),
-      ),
-      child: Center(
-          child: Column(
+    return Center(
+      child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset(
@@ -48,7 +36,7 @@ class GradientContainer extends StatelessWidget {
             icon: const Icon(Icons.arrow_right_alt),
           ),
         ],
-      )),
+      ),
     );
   }
 }
