@@ -38,12 +38,13 @@ class GradientContainer extends StatelessWidget {
               ),
             ),
           ),
-          ElevatedButton(
+          OutlinedButton.icon(
             onPressed: () {},
-            child: const Text("Start Quiz"),
-            style: ElevatedButton.styleFrom(
-                foregroundColor: Colors.white,
-                backgroundColor: Colors.transparent),
+            style: OutlinedButton.styleFrom(
+              foregroundColor: Colors.white,
+            ),
+            label: const Text("Start Quiz"),
+            icon: const Icon(Icons.arrow_right_alt),
           ),
         ],
       )),
