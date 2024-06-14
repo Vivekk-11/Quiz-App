@@ -49,7 +49,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
             ),
             ...currentQuestion.getShuffleList().map((item) {
               return AnswerButton(item, () {
-                answerQuestion(item.answer);
+                answerQuestion(item);
               });
             })
           ],
